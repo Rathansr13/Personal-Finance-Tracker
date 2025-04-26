@@ -1,0 +1,21 @@
+<div class="login-page">
+    <div class="login-container">
+        <h2>Welcome Back 👋</h2>
+        <p class="subtext">Login to your GoMoney account</p>
+        <form class="login-form" #loginform="ngForm"  (ngSubmit)="onLogin(loginform)" autocomplete="off">
+          <input type="email" placeholder="Email" required ngModel name="email" />
+          <input type="password" placeholder="Password" required ngModel name="password"/>
+          <button type="submit">Sign In</button>
+          <a href="#" class="forgot-link">Forgot password?</a>
+          <a routerLink="/register" class="signup-link">Create One</a>
+        </form>
+        <div class="divider">
+          <span>OR</span>
+        </div>
+        <button class="google-auth-btn">
+          <img src="../../assets/googl-icon.jpg" alt="Google Icon" />
+          Sign in with Google
+        </button>
+        {{loginform.value | json}}
+      </div>
+</div>

@@ -1,0 +1,17 @@
+<body class="register-body">
+  <div class="register-container">
+    <h2>Create Your Account 🚀</h2>
+    <p class="subtext">Join GoMoney and take control of your finances</p>
+    <form class="register-form" #f="ngForm">
+      <input type="text" placeholder="Full Name" required name="fullName" ngModel/>
+      <input type="email" placeholder="Email Address" required name="email" ngModel/>
+      <input type="password" placeholder="Password" required name="password" ngModel/>
+      <input type="password" placeholder="Confirm Password" required />
+      <button type="submit">Register</button>
+      <p class="login-link">
+        Already have an account? <a routerLink="/login">Login</a>
+      </p>
+    </form>
+  </div>
+  <!-- {{f.value | json}} -->
+</body>
