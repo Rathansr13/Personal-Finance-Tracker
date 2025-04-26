@@ -1,0 +1,78 @@
+.transaction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .add-transaction-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .form-title {
+    text-align: center;
+    color: #6c63ff;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .submit-btn {
+    background-color: #6c63ff;
+    color: white;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .submit-btn:hover {
+    background-color: #5850d4;
+  }
+  
+  select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+  }
+  

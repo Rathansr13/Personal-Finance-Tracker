@@ -13,6 +13,8 @@ import { TrendsComponent } from './pages/trends/trends.component';
 import { TransactionComponent } from './pages/transaction/transaction.component';
 import { BudgetComponent } from './pages/budget/budget.component';
 import { AgentComponent } from './pages/agent/agent.component';
+import { ChartsComponent } from './charts/charts.component';
+import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
 
 
 @NgModule({
@@ -26,14 +28,16 @@ import { AgentComponent } from './pages/agent/agent.component';
     TrendsComponent,
     TransactionComponent,
     BudgetComponent,
-    AgentComponent
+    AgentComponent,
+    ChartsComponent,
   ],
   imports: [
     RouterOutlet,
     RouterLink,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CanvasJSAngularChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
