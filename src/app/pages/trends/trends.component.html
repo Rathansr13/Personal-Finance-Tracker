@@ -1,1 +1,83 @@
-<p>trends works!</p>
+<!-- Trends Section -->
+<div class="container my-4">
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-wallet"></i>
+          </div>
+          <h3>Income</h3>
+          <p>$5,000</p>
+        </div>
+      </div>
+  
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-money-bill-wave"></i>
+          </div>
+          <h3>Expenses</h3>
+          <p>$2,500</p>
+        </div>
+      </div>
+  
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-piggy-bank"></i>
+          </div>
+          <h3>Budget</h3>
+          <p>$1,000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Notifications + Chart Section -->
+  <div class="container my-4">
+    <div class="row g-4">
+      <!-- Notification Box -->
+      <div class="col-12 col-md-6">
+        <div class="notification-box">
+          <div class="notifications-container">
+            <div class="notification">
+              <i class="fas fa-lightbulb icon"></i>
+              <div class="notification-text">
+                <h4>AI Insight</h4>
+                <p>New spending pattern detected.</p>
+              </div>
+            </div>
+            <div class="notification">
+              <i class="fas fa-lightbulb icon"></i>
+              <div class="notification-text">
+                <h4>AI Insight</h4>
+                <p>New spending pattern detected.</p>
+              </div>
+            </div>
+            <div class="notification">
+              <i class="fas fa-lightbulb icon"></i>
+              <div class="notification-text">
+                <h4>AI Insight</h4>
+                <p>New spending pattern detected.</p>
+              </div>
+            </div>
+            <div class="notification">
+                <i class="fas fa-lightbulb icon"></i>
+                <div class="notification-text">
+                  <h4>AI Insight</h4>
+                  <p>New spending pattern detected.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Chart Box -->
+      <div class="col-12 col-md-6">
+        <div class="chart-box">
+          <canvasjs-chart [options]="chartOptions" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+  

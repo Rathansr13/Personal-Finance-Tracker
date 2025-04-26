@@ -43,15 +43,15 @@ const routes: Routes = [
       },
       {
         path : 'transaction',
-        component : TransactionComponent
+        component : TransactionComponent,
       },
       {
         path : 'budget',
-        component  : BudgetComponent
+        component  : BudgetComponent,
       },
       {
         path : 'agent',
-        component : AgentComponent
+        component : AgentComponent,
       }
     ]
   },
