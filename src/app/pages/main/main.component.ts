@@ -6,17 +6,24 @@ import { Component } from '@angular/core';
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
-export class MainComponent { 
-
-  // hamburger: HTMLElement | null;
-  // sidebar: HTMLElement | null;
-
+export class MainComponent {
+  sidebarOpen = false;
 
   toggle() {
-    const sidebar = (document.getElementById('sidebar') as HTMLDivElement);
-    if (sidebar) {
-      sidebar.classList.add('sidebar');
+    const sidebar = document.querySelector('.sidebar') as HTMLElement;
+    const hamburger = document.querySelector('.hamburger') as HTMLElement;
+    this.sidebarOpen = !this.sidebarOpen;
+
+    if (this.sidebarOpen) {
+      sidebar.classList.add('open');
+      hamburger.style.color = 'white'; // <-- set hamburger color to white when open
+    } else {
+      sidebar.classList.remove('open');
+      hamburger.style.color = '#6c63ff'; // <-- reset to purple when closed
     }
   }
 
+  closeSidebar() {
+    this.toggle()
+  }
 }

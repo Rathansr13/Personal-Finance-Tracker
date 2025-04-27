@@ -1,22 +1,23 @@
-
 <div class="dashboard-container">
-     <div class="sidebar">
+   <div class="sidebar">
       <button class="hamburger" id="hamburger" (click)="toggle()">
-         <i class="fa-solid fa-bars"></i>
+         <i *ngIf="!sidebarOpen" class="fa-solid fa-bars"></i>
+         <i *ngIf="sidebarOpen" class="fa-solid fa-xmark"></i>
       </button>
-        <div class="nav-bar">
-            <div class="nav">
-                <ul class="nav-item">
-                   <li class="nav-link"><a routerLink="/dashboard"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
-                   <li class="nav-link"><a routerLink="transaction"><i class="fa-solid fa-tent-arrow-left-right"></i>Transation</a></li>
-                   <li class="nav-link"><a routerLink="budget"><i class="fa-solid fa-money-check-dollar"></i>Budget</a></li>
-                   <li class="nav-link"><a routerLink="agent"><i class="fa-solid fa-hexagon-nodes"></i>Agent</a></li>
-                </ul>
-            </div>
-        </div>
+     <div class="nav-bar">
+       <div class="nav">
+         <ul class="nav-item">
+           <li class="nav-link"><a routerLink="/dashboard" (click)="closeSidebar()"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+           <li class="nav-link"><a routerLink="transaction" (click)="closeSidebar()"><i class="fa-solid fa-tent-arrow-left-right"></i> Transaction</a></li>
+           <li class="nav-link"><a routerLink="budget" (click)="closeSidebar()"><i class="fa-solid fa-money-check-dollar"></i> Budget</a></li>
+           <li class="nav-link"><a routerLink="agent" (click)="closeSidebar()"><i class="fa-solid fa-hexagon-nodes"></i> Agent</a></li>
+         </ul>
+       </div>
      </div>
-     <div class="content  text-center fw-bold">
-        <router-outlet></router-outlet>
-     </div>
-     
-</div>
+   </div>
+ 
+   <div class="content text-center fw-bold">
+     <router-outlet></router-outlet>
+   </div>
+ </div>
+ 
