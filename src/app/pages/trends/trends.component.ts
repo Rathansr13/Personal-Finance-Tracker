@@ -15,12 +15,12 @@ export class TrendsComponent {
 	  animationEnabled: true,
 	  exportEnabled: true,
 	  title: {
-		text: "World Population Growth Rate",
+		text: "Income Trend",
 		fontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
 		fontWeight: "bold"
 	  },
 	  axisY: {
-		title: "Annual Population Growth (in %)",
+		title: "Income",
 		valueFormatString: "#,###.##'%'"
 	  },
 	  data: [{
